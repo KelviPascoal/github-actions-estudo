@@ -1,0 +1,14 @@
+name: janta
+on: push
+jobs:
+  fazer-janta:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ligar o fogo
+        run: echo ligar o fogo
+
+      - name: Fazer a janta
+        run: echo fazer a janta
+
+      - name: Apagar o fogo
+        run: echo apagar o fogo
