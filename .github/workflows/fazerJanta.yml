@@ -12,3 +12,15 @@ jobs:
 
       - name: Apagar o fogo
         run: echo apagar o fogo
+
+  fazer-cafe:
+    runs-on: windows-latest
+    steps:
+      - name: fazer café
+        run: Write-Host fazer café
+
+  fazer-cafe-no-mac:
+    runs-on: macos-latest
+    steps:
+      - name: fazer café
+        run: echo fazer café
