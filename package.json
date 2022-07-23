@@ -1,0 +1,13 @@
+{
+  "name": "estudo github actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KelviPascoal/github-actions-estudo.git",
+  "author": "vv-con-kelvi-pascoal <kelvi.santos@viavarejo.com.br>",
+  "license": "MIT",
+
+  "scripts": {
+    "lint": "echo limpando o codigo",
+    "test": "echo testando o codigo"
+  }
+}

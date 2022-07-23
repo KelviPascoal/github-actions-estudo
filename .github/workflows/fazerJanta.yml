@@ -1,28 +1,22 @@
-name: janta
+name: ci
 on: push
 jobs:
-  fazer-janta:
+  ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Ligar o fogo
-        run: echo ligar o fogo
+      - name: Fazer checkout do repositorio
+        uses: actions/checkout@v3
+        
+      - name: Visualizando repositorio
+        run: ls -a
 
-      - name: Fazer a janta
-        run: echo fazer a janta
+      - name: Instalar as dependencias
+        run: yarn
 
-      - name: Apagar o fogo
-        run: echo apagar o fogo
+      - name: Rodar o lint
+        run: yarn lint
 
-  fazer-cafe:
-    needs: ['fazer-janta']
-    runs-on: windows-latest
-    steps:
-      - name: fazer café
-        run: Write-Host fazer café
+      - name: Rodar os testes
+        run: yarn test
 
-  fazer-cafe-no-mac:
-    needs: ['fazer-cafe']
-    runs-on: macos-latest
-    steps:
-      - name: fazer café
-        run: echo fazer café
+ 
