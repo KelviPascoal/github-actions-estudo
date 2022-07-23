@@ -14,12 +14,14 @@ jobs:
         run: echo apagar o fogo
 
   fazer-cafe:
+    needs: ['fazer-janta']
     runs-on: windows-latest
     steps:
       - name: fazer café
         run: Write-Host fazer café
 
   fazer-cafe-no-mac:
+    needs: ['fazer-cafe']
     runs-on: macos-latest
     steps:
       - name: fazer café
