@@ -1,0 +1,12 @@
+name: fazerCafe
+on: 'push'
+jobs:
+  FazerCafe: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ligar o fogo
+        run: echo Ligar o fogo
+      - name: Passar o Café
+        run: echo Passar o Café
+      - name: Desligar o fogo
+        run: echo Desligar o fogo
